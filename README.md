@@ -3,7 +3,7 @@
 There are several ways to run "npm install" in web browsers.
 Here the definition of "npm install" is that we can inspect the contents of node_modules after running "npm install" via file system APIs.
 
-This repo includes the benchmark code and source code for the website.
+This repo includes the benchmark code and source code for the website, which also hosts pages to be used in the benchmarks as well.
 
 See https://npm-install-browser-benchmark.nry.app for more details.
 
