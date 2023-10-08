@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "isolatedModules": true,
+    "outDir": "./dist",
+    "lib": ["esnext", "dom"],
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "types": ["node"],
+    "module": "nodenext",
+    "target": "esnext",
+    "esModuleInterop": true,
+    "noEmit": true,
+    "verbatimModuleSyntax": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "paths": {
+      "@@/pkgs": ["./src/runtime/pkgs.ts"]
+    }
+    //"skipLibCheck": true
+  },
+  "include": ["./src/**/*"]
+}
