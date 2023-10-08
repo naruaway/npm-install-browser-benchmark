@@ -4,6 +4,8 @@ import { npmInstallPkgs } from '../../../src/runtime/pkgs.js';
 import { npmInstallPkgs as npmInstallPkgsHeavy } from '../../../src/runtime/pkgs-heavy.js';
 import * as constants from '../constants.js';
 
+import { FaGithub } from 'react-icons/fa';
+
 const npmInstallCmd = `npm install ${npmInstallPkgs
   .map((pkg) => `${pkg.name}@${pkg.version}`)
   .join(' ')}`;
@@ -179,6 +181,14 @@ export const Page = () => {
     <div className="my-6 space-y-5 max-w-[900px] mx-auto px-3">
       <div className="">
         <H1>{constants.title}</H1>
+        <ul className="mb-3">
+          <li>
+            <ExternalLink href="https://github.com/naruaway/npm-install-browser-benchmark">
+              <FaGithub size={24} className="inline me-1 text-slate-600" />
+              naruaway/npm-install-browser-benchmark
+            </ExternalLink>
+          </li>
+        </ul>
         <P>
           Creating an in-browser tool to deal with a node_modules file tree such
           as "running Webpack in browser" often requires essentially running
